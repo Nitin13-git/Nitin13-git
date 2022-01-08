@@ -3,7 +3,7 @@
 
 <h1 align="center">Hi 👋, I'm Nitin Kushwaha</h1>
 <h3 align="center">Programmer, Machine Learning Engineer , Jr. Data Scientist</h3>
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.1432.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/PushpenderIndia/PushpenderIndia/master/media/coding-gif.gif"></p>
 
 
 -----
