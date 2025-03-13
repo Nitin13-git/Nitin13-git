@@ -10,13 +10,13 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=nitin13-git&label=Profile%20views&color=0e75b6&style=flat" alt="nitin13-git" /> </p>
 
-- 🔭 I’m currently working on **Document Image Analysis**
+- 🔭 I’m currently working on **Medical Image Analysis, LLM, Stable diffusion**
 
 - 🌱 I’m currently learning **Deep Learning**
 
-- 👯 I’m looking to collaborate on **Back Order Prediction System**
+- 👯 I’m looking to collaborate on **Conduct experimental knowledge distillation on Stable Diffusion.**
 
-- 💬 Ask me about **Full Stack Development**
+- 💬 Ask me about **Machine Learning(Deep Learning)**
 
 - 📫 How to reach me **nitinkushwaha80330@gmail.com**
 
