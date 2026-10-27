@@ -18,10 +18,10 @@ Lately I've been benchmarking agents against xbow/xben-style security challenges
 - [**learn-harness-security**](https://github.com/Nitin13-git/learn-harness-security) ![capstone](https://img.shields.io/badge/capstone-brightgreen) — A course on harness engineering for the adversarial case specifically: running an agent against security-benchmark tasks where the target is actively trying to escape scope and fake its own verification. Lectures plus a hands-on project wiring the tools above around a toy exploit target, verified through an independent side channel instead of the agent's own report.
 
 #### Contributing to
-- [**REA**](https://github.com/morluto/rea) — Reverse engineer anything with agents, from app behavior down to native binaries.
-- [**vLLM**](https://github.com/vllm-project/vllm) — High-throughput LLM inference and serving engine.
-- [**Claude Code**](https://github.com/anthropics/claude-code) — Agentic coding tool that lives in the terminal.
-- [**Skills**](https://github.com/anthropics/skills) — Public repository for Agent Skills.
+- [**REA**](https://github.com/morluto/rea) ![stars](https://img.shields.io/github/stars/morluto/rea?style=flat-square&label=stars&color=yellow) — Reverse engineer anything with agents, from app behavior down to native binaries.
+- [**vLLM**](https://github.com/vllm-project/vllm) ![stars](https://img.shields.io/github/stars/vllm-project/vllm?style=flat-square&label=stars&color=yellow) — High-throughput LLM inference and serving engine.
+- [**Claude Code**](https://github.com/anthropics/claude-code) ![stars](https://img.shields.io/github/stars/anthropics/claude-code?style=flat-square&label=stars&color=yellow) — Agentic coding tool that lives in the terminal.
+- [**Skills**](https://github.com/anthropics/skills) ![stars](https://img.shields.io/github/stars/anthropics/skills?style=flat-square&label=stars&color=yellow) — Public repository for Agent Skills.
 
 #### Benchmarking
 Running agents through xbow/xben-style offensive-security benchmarks with:
