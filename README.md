@@ -7,16 +7,16 @@ I work on AI harness engineering — building the scaffolding agents run, eval, 
 Lately I've been benchmarking agents against xbow/xben-style security challenges using [PentAGI](https://github.com/vxcontrol/pentagi) and [HackerAgent](https://github.com/pushpenderindia/hackeragent).
 
 #### Building — the harness stack
-- [**HCP**](https://github.com/Nitin13-git/hcp) — Harness Context Protocol: a standard interface for agent harness state, verification, scope, and session lifecycle
-- [**AgentCage**](https://github.com/Nitin13-git/agentcage) — least-privilege sandboxing for agent sessions: scope-enforced file, subprocess, and network access
-- [**HarnessBench**](https://github.com/Nitin13-git/harnessbench) — benchmark agent harnesses across models: success rate, latency, cost, context efficiency in one report
-- [**VerifyLoop**](https://github.com/Nitin13-git/verifyloop) — independent verification and failure triage for long-running agent sessions
-- [**ReceiptLedger**](https://github.com/Nitin13-git/receiptledger) — append-only, hash-chained receipt ledger with O(1) head lookup and conflict detection
-- [**learn-harness-security**](https://github.com/Nitin13-git/learn-harness-security) — a course on harness engineering for security-benchmark tasks, built on the tools above
+- [**HCP**](https://github.com/Nitin13-git/hcp) — Harness Context Protocol. Standardizes the four subsystems an agent harness needs: durable state outside the context window, independent verification evidence instead of self-reported success, least-privilege scope, and init/checkpoint/teardown session lifecycle. Ships a reference SDK plus a conformance validator that checks any harness implementation against the spec.
+- [**AgentCage**](https://github.com/Nitin13-git/agentcage) — Least-privilege sandboxing for a single agent session. Patches `open`, `subprocess.Popen`, and `socket.connect` directly, so a declared scope is enforced at the three points almost everything in the standard library funnels through, not left as an advisory convention the agent's own code has to remember to check.
+- [**HarnessBench**](https://github.com/Nitin13-git/harnessbench) — Benchmarks agent harnesses across models on tasks that grade independently, never self-report. One OpenAI-compatible adapter reaches most open-weight models (Qwen, DeepSeek, GLM, Kimi, MiniMax, GPT-OSS, Devstral) through a single interface, and reports success rate, latency, cost, and context-token usage as one comparison table.
+- [**VerifyLoop**](https://github.com/Nitin13-git/verifyloop) — Runs a verification command, parses real pass/fail/error counts rather than trusting output, and categorizes failures by exception type straight from the traceback. Keeps an append-only progress log so a session that gets interrupted and resumed can check what already passed instead of re-running everything.
+- [**ReceiptLedger**](https://github.com/Nitin13-git/receiptledger) — Append-only, hash-chained receipt log for agent sessions. A side index maps each key to the byte offset of its latest receipt for O(1) head lookup regardless of ledger size, and optimistic-concurrency conflict detection catches two sessions writing the same key without having seen each other's latest write.
+- [**learn-harness-security**](https://github.com/Nitin13-git/learn-harness-security) — A course on harness engineering for the adversarial case specifically: running an agent against security-benchmark tasks where the target is actively trying to escape scope and fake its own verification. Lectures plus a hands-on project wiring the tools above around a toy exploit target, verified through an independent side channel instead of the agent's own report.
 
 #### Contributing to
-- [**REA**](https://github.com/morluto/rea) — reverse engineer anything with agents
-- [**vLLM**](https://github.com/vllm-project/vllm) — high-throughput LLM inference and serving
+- [**REA**](https://github.com/morluto/rea) — Reverse engineer anything with agents, from app behavior down to native binaries.
+- [**vLLM**](https://github.com/vllm-project/vllm) — High-throughput LLM inference and serving engine.
 
 #### Benchmarking
 Running agents through xbow/xben-style offensive-security benchmarks with:
