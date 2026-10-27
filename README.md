@@ -7,7 +7,7 @@ I work on AI harness engineering — building the scaffolding agents run, eval, 
 Lately I've been benchmarking agents against xbow/xben-style security challenges using [PentAGI](https://github.com/vxcontrol/pentagi) and [HackerAgent](https://github.com/pushpenderindia/hackeragent).
 
 #### Building
-- **AI Harness** — infrastructure for running and evaluating AI agents
+- [**HCP**](https://github.com/Nitin13-git/hcp) — Harness Context Protocol: a standard interface for agent harness state, verification, scope, and session lifecycle
 - [**REA**](https://github.com/morluto/rea) — reverse engineer anything with agents
 - [**vLLM**](https://github.com/vllm-project/vllm) — high-throughput LLM inference and serving
 
